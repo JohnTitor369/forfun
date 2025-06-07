@@ -1,16 +1,29 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Автозапуск видео</title>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Автовоспроизведение видео</title>
     <style>
-        body { margin: 0; padding: 0; background: #000; }
-        video { width: 100%; height: 100vh; object-fit: cover; }
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #000;
+        }
+        video {
+            max-width: 100%;
+            max-height: 100%;
+        }
     </style>
 </head>
 <body>
-    <video autoplay muted controls>
+    <video autoplay controls muted playsinline>
         <source src="https://github.com/JohnTitor369/forfun/raw/main/prunk.mp4" type="video/mp4">
+        Ваш браузер не поддерживает видео тег.
     </video>
 </body>
 </html>
